@@ -7,8 +7,8 @@ namespace LineComparison
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Line Comparison Computation Program");
-            Line line1 = new Line("line1");
-            Line line2 = new Line("line2");
+            Line line1 = new Line("FirstLine");
+            Line line2 = new Line("SecondLine");
             Console.Write("Enter the value x1 for line1 :");
             line1.x1 = Convert.ToInt32(Console.ReadLine());
             Console.Write("Enter the value y1 for line1 :");
@@ -30,7 +30,7 @@ namespace LineComparison
             int line_comparison = line1.lengthOfTheLine.CompareTo(line2.lengthOfTheLine);
             if(line_comparison==0)
             {
-                Console.WriteLine("Lines are equal in length");
+                Console.WriteLine("Two Lines are equal in length");
             }
             else if(line_comparison>0)
             {
